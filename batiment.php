@@ -56,6 +56,8 @@
     
         if(!empty($num) && !empty($idbat))
         {
+            //$idbat = $_POST['idbat'];
+            //$num   = $_POST['num'];
 
             foreach($newbat->findChambre() as $val) 
             {
@@ -92,6 +94,7 @@
                 <tbody>
                 <?php
                     $statut = "-";
+
                     foreach($newbat->findChambreBat() as $val) 
                     {
                         echo '<tr>';

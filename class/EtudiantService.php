@@ -77,11 +77,11 @@
                 try
                 {
                     $q = $this->_db->prepare('INSERT INTO boursier(matricule_etudiant,id_bourse) 
-                    VALUES (?,?)');
+                                              VALUES (?,?)');
                     $q->execute(array($etudiant->getMatricule(),$etudiant->getId_bourse()));
                     
                     $q1 = $this->_db->prepare('INSERT INTO  est_loge(etu_boursier,id_chambre)
-                    VALUES (?,?)');
+                                               VALUES (?,?)');
                     $q1->execute(array($etudiant->getMatricule(),$etudiant->getId_chambre()));
                     
                 }
