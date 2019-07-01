@@ -56,8 +56,6 @@
     
         if(!empty($num) && !empty($idbat))
         {
-            //$idbat = $_POST['idbat'];
-            //$num   = $_POST['num'];
 
             foreach($newbat->findChambre() as $val) 
             {
@@ -94,7 +92,6 @@
                 <tbody>
                 <?php
                     $statut = "-";
-                    //fonction autoload pour le chargement automatique de nos class       
                     foreach($newbat->findChambreBat() as $val) 
                     {
                         echo '<tr>';
